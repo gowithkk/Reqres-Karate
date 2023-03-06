@@ -1,2 +1,3 @@
 .vscode
 target/karate-reports
+.DS_Store

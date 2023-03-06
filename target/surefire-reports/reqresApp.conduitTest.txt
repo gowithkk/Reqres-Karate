@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: reqresApp.conduitTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.439 s - in reqresApp.conduitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.98 s - in reqresApp.conduitTest
