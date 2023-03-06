@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"reqresApp\/feature\/Login[1:7]","start":1678080611033,"end":1678080612727,"title":"reqresApp\/feature\/Login[1:7] 16:30:11.033-16:30:12.727 Login - Successful"},{"id":2,"group":2,"content":"reqresApp\/feature\/Login[2.1:43]","start":1678080611033,"end":1678080612727,"title":"reqresApp\/feature\/Login[2.1:43] 16:30:11.033-16:30:12.727 Validate User Login Error Messages"},{"id":3,"group":3,"content":"reqresApp\/feature\/Login[2.2:44]","start":1678080611033,"end":1678080612727,"title":"reqresApp\/feature\/Login[2.2:44] 16:30:11.033-16:30:12.727 Validate User Login Error Messages"},{"id":4,"group":4,"content":"reqresApp\/feature\/Login[2.3:45]","start":1678080611033,"end":1678080612727,"title":"reqresApp\/feature\/Login[2.3:45] 16:30:11.033-16:30:12.727 Validate User Login Error Messages"},{"id":5,"group":5,"content":"reqresApp\/feature\/Register[1:8]","start":1678080611033,"end":1678080612727,"title":"reqresApp\/feature\/Register[1:8] 16:30:11.033-16:30:12.727 New User Registration"},{"id":6,"group":4,"content":"reqresApp\/feature\/Register[2.1:45]","start":1678080612735,"end":1678080613332,"title":"reqresApp\/feature\/Register[2.1:45] 16:30:12.735-16:30:13.332 Validate User Registration Error Messages"},{"id":7,"group":2,"content":"reqresApp\/feature\/Register[2.2:46]","start":1678080613336,"end":1678080613917,"title":"reqresApp\/feature\/Register[2.2:46] 16:30:13.336-16:30:13.917 Validate User Registration Error Messages"},{"id":8,"group":1,"content":"reqresApp\/feature\/Register[2.3:47]","start":1678080613919,"end":1678080614505,"title":"reqresApp\/feature\/Register[2.3:47] 16:30:13.919-16:30:14.505 Validate User Registration Error Messages"},{"id":9,"group":5,"content":"reqresApp\/feature\/Resources[1:7]","start":1678080612732,"end":1678080613334,"title":"reqresApp\/feature\/Resources[1:7] 16:30:12.732-16:30:13.334 List Resources"},{"id":10,"group":3,"content":"reqresApp\/feature\/Resources[2:22]","start":1678080612735,"end":1678080613332,"title":"reqresApp\/feature\/Resources[2:22] 16:30:12.735-16:30:13.332 List a Single Resource"},{"id":11,"group":4,"content":"reqresApp\/feature\/Resources[3:43]","start":1678080613337,"end":1678080613916,"title":"reqresApp\/feature\/Resources[3:43] 16:30:13.337-16:30:13.916 List a Non-exisitng Resource"},{"id":12,"group":3,"content":"reqresApp\/feature\/Users[1:7]","start":1678080613336,"end":1678080613389,"title":"reqresApp\/feature\/Users[1:7] 16:30:13.336-16:30:13.389 List Users"},{"id":13,"group":5,"content":"reqresApp\/feature\/Users[2:23]","start":1678080613336,"end":1678080613385,"title":"reqresApp\/feature\/Users[2:23] 16:30:13.336-16:30:13.385 List a Single User"},{"id":14,"group":5,"content":"reqresApp\/feature\/Users[3:45]","start":1678080613388,"end":1678080613977,"title":"reqresApp\/feature\/Users[3:45] 16:30:13.388-16:30:13.977 List a Non-exisitng User"},{"id":15,"group":3,"content":"reqresApp\/feature\/Users[4:51]","start":1678080613392,"end":1678080613992,"title":"reqresApp\/feature\/Users[4:51] 16:30:13.392-16:30:13.992 Create a User"},{"id":16,"group":4,"content":"reqresApp\/feature\/Users[5:75]","start":1678080613919,"end":1678080614505,"title":"reqresApp\/feature\/Users[5:75] 16:30:13.919-16:30:14.505 Update a User's info using Put"},{"id":17,"group":2,"content":"reqresApp\/feature\/Users[6:90]","start":1678080613919,"end":1678080614510,"title":"reqresApp\/feature\/Users[6:90] 16:30:13.919-16:30:14.510 Update a User's info using Patch"},{"id":18,"group":5,"content":"reqresApp\/feature\/Users[7:105]","start":1678080613979,"end":1678080614556,"title":"reqresApp\/feature\/Users[7:105] 16:30:13.979-16:30:14.556 Delete a User"},{"id":19,"group":3,"content":"reqresApp\/feature\/Users[8:111]","start":1678080613995,"end":1678080617636,"title":"reqresApp\/feature\/Users[8:111] 16:30:13.995-16:30:17.636 Retry call"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

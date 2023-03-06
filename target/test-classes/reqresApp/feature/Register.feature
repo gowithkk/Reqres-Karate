@@ -21,6 +21,7 @@ Feature: Register new user
         And match response ==
         """
             {
+                "id": "#number",
                 "token": "#string"
             }
         """

@@ -1,4 +1,4 @@
-package conduitApp;
+package reqresApp;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
