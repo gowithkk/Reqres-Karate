@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="conduitApp.conduitTest" time="8.017" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/kliu3/reqresApp/target/test-classes:/Users/kliu3/reqresApp/target/classes:/Users/kliu3/.m2/repository/com/intuit/karate/karate-junit5/1.3.1/karate-junit5-1.3.1.jar:/Users/kliu3/.m2/repository/com/intuit/karate/karate-core/1.3.1/karate-core-1.3.1.jar:/Users/kliu3/.m2/repository/org/graalvm/js/js-scriptengine/22.0.0.2/js-scriptengine-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/graalvm/js/js/22.0.0.2/js-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/graalvm/regex/regex/22.0.0.2/regex-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0.2/truffle-api-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/Users/kliu3/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/Users/kliu3/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/kliu3/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/Users/kliu3/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/kliu3/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/kliu3/.m2/repository/com/linecorp/armeria/armeria/1.18.0/armeria-1.18.0.jar:/Users/kliu3/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/Users/kliu3/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/Users/kliu3/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/Users/kliu3/.m2/repository/io/micrometer/micrometer-core/1.9.2/micrometer-core-1.9.2.jar:/Users/kliu3/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/kliu3/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport/4.1.79.Final/netty-transport-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-common/4.1.79.Final/netty-common-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-buffer/4.1.79.Final/netty-buffer-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver/4.1.79.Final/netty-resolver-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-haproxy/4.1.79.Final/netty-codec-haproxy-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec/4.1.79.Final/netty-codec-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-http2/4.1.79.Final/netty-codec-http2-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-handler/4.1.79.Final/netty-handler-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-http/4.1.79.Final/netty-codec-http-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver-dns/4.1.79.Final/netty-resolver-dns-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-dns/4.1.79.Final/netty-codec-dns-4.1.79.Final.jar:/Users/kliu3/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/kliu3/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.79.Final/netty-transport-classes-epoll-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.79.Final/netty-resolver-dns-classes-macos-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-classes/2.0.53.Final/netty-tcnative-classes-2.0.53.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-handler-proxy/4.1.79.Final/netty-handler-proxy-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-socks/4.1.79.Final/netty-codec-socks-4.1.79.Final.jar:/Users/kliu3/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.7.1/brotli4j-1.7.1.jar:/Users/kliu3/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/kliu3/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/kliu3/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/kliu3/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/Users/kliu3/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/Users/kliu3/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/Users/kliu3/.m2/repository/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar:/Users/kliu3/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/Users/kliu3/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/Users/kliu3/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/Users/kliu3/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/Users/kliu3/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/kliu3/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/kliu3/.m2/repository/org/yaml/snakeyaml/1.32/snakeyaml-1.32.jar:/Users/kliu3/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/Users/kliu3/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/Users/kliu3/.m2/repository/io/github/classgraph/classgraph/4.8.149/classgraph-4.8.149.jar:/Users/kliu3/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/Users/kliu3/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/kliu3/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/Users/kliu3/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/kliu3/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/kliu3/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/Users/kliu3/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/Users/kliu3/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/Users/kliu3/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/kliu3/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/kliu3/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/kliu3/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/kliu3/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/kliu3/reqresApp/target/surefire/surefirebooter15497568270813238645.jar /Users/kliu3/reqresApp/target/surefire 2023-03-06T16-27-33_206-jvmRun1 surefire964391380849313106tmp surefire_03838158213715722639tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/kliu3/reqresApp/target/test-classes:/Users/kliu3/reqresApp/target/classes:/Users/kliu3/.m2/repository/com/intuit/karate/karate-junit5/1.3.1/karate-junit5-1.3.1.jar:/Users/kliu3/.m2/repository/com/intuit/karate/karate-core/1.3.1/karate-core-1.3.1.jar:/Users/kliu3/.m2/repository/org/graalvm/js/js-scriptengine/22.0.0.2/js-scriptengine-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/graalvm/js/js/22.0.0.2/js-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/graalvm/regex/regex/22.0.0.2/regex-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0.2/truffle-api-22.0.0.2.jar:/Users/kliu3/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/Users/kliu3/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/Users/kliu3/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/kliu3/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/Users/kliu3/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/kliu3/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/kliu3/.m2/repository/com/linecorp/armeria/armeria/1.18.0/armeria-1.18.0.jar:/Users/kliu3/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/Users/kliu3/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/Users/kliu3/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/Users/kliu3/.m2/repository/io/micrometer/micrometer-core/1.9.2/micrometer-core-1.9.2.jar:/Users/kliu3/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/kliu3/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport/4.1.79.Final/netty-transport-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-common/4.1.79.Final/netty-common-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-buffer/4.1.79.Final/netty-buffer-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver/4.1.79.Final/netty-resolver-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-haproxy/4.1.79.Final/netty-codec-haproxy-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec/4.1.79.Final/netty-codec-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-http2/4.1.79.Final/netty-codec-http2-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-handler/4.1.79.Final/netty-handler-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-http/4.1.79.Final/netty-codec-http-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver-dns/4.1.79.Final/netty-resolver-dns-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-dns/4.1.79.Final/netty-codec-dns-4.1.79.Final.jar:/Users/kliu3/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/kliu3/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.79.Final/netty-transport-classes-epoll-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.79.Final/netty-resolver-dns-classes-macos-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-classes/2.0.53.Final/netty-tcnative-classes-2.0.53.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/Users/kliu3/.m2/repository/io/netty/netty-handler-proxy/4.1.79.Final/netty-handler-proxy-4.1.79.Final.jar:/Users/kliu3/.m2/repository/io/netty/netty-codec-socks/4.1.79.Final/netty-codec-socks-4.1.79.Final.jar:/Users/kliu3/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.7.1/brotli4j-1.7.1.jar:/Users/kliu3/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/kliu3/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/kliu3/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/kliu3/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/Users/kliu3/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/Users/kliu3/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/Users/kliu3/.m2/repository/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar:/Users/kliu3/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/Users/kliu3/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/Users/kliu3/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/Users/kliu3/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/Users/kliu3/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/kliu3/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/kliu3/.m2/repository/org/yaml/snakeyaml/1.32/snakeyaml-1.32.jar:/Users/kliu3/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/Users/kliu3/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/Users/kliu3/.m2/repository/io/github/classgraph/classgraph/4.8.149/classgraph-4.8.149.jar:/Users/kliu3/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/Users/kliu3/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/kliu3/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/Users/kliu3/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/kliu3/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/kliu3/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/Users/kliu3/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/Users/kliu3/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/Users/kliu3/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/kliu3/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/kliu3/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/kliu3/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/kliu3/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/kliu3"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/kliu3/reqresApp"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/kliu3/reqresApp/target/surefire/surefirebooter15497568270813238645.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2"/>
+    <property name="user.name" value="kliu3"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/kliu3/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/rk/52rd0zpj06b38kcqyzvcn5bc0000gp/T/"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="/Users/kliu3/reqresApp"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/kliu3/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="19.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="testParallel" classname="conduitApp.conduitTest" time="8.017">
+    <failure message="match failed: EQUALS&#10;  $ | not equal | actual has 1 more key(s) than expected - {&quot;id&quot;:4} (MAP:MAP)&#10;  {&quot;id&quot;:4,&quot;token&quot;:&quot;QpwL5tke4Pnpja7X4&quot;}&#10;  {&quot;token&quot;:&quot;#string&quot;}&#10;&#10;&#10;classpath:reqresApp/feature/Register.feature:21 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | not equal | actual has 1 more key(s) than expected - {"id":4} (MAP:MAP)
+  {"id":4,"token":"QpwL5tke4Pnpja7X4"}
+  {"token":"#string"}
+
+
+classpath:reqresApp/feature/Register.feature:21 ==> expected: <0> but was: <1>
+	at conduitApp.conduitTest.testParallel(reqresApp.java:15)
+]]></failure>
+    <system-out><![CDATA[16:27:33.993 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:27:33.997 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+16:27:34.371 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:34.376 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+16:27:34.547 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 54
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"eve.holt@reqres.in","password":"cityslicka"}
+
+16:27:35.398 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 850
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 29
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LD4oQXWsFkc6NRa71zjLedNlx1SaSiZ747LRY%2BZ49qlssfARHv5BLlQNJt9LPPl7%2FX%2FnujvDCDbGwlIOjASeRhx97ThrSRtBn4uOmd9y28Mdyf2pFgCVvMT%2FUA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a38309bebd5aac9-SYD
+{"token":"QpwL5tke4Pnpja7X4"}
+
+16:27:35.408 [pool-1-thread-3] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+16:27:35.415 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/login
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 38
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"peter@klaven","password":""}
+
+16:27:35.415 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:35.418 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:35.418 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/login
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 54
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"eve.holt@reqres.in","password":"cityslicka"}
+
+16:27:35.422 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/login
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 29
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"","password":"123"}
+
+16:27:35.424 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:35.427 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/login
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"peter@klaven","password":"123"}
+
+16:27:35.432 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:35.439 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"eve.holt@reqres.in","password":"pistol"}
+
+16:27:36.006 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 587
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 29
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nEa%2F890YcZctyWFrCHzqElaoXKc0KMqxzNUALGOIVKf%2Fw4aOn2qrTCRX6OhI1V6WdNiUx5Tu1aPWK9BWn6SVszlOrZ17iG8Qt%2Fn2t0GDVe9X2GLexeKj4Yop7w%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a38309fabd9a965-SYD
+{"token":"QpwL5tke4Pnpja7X4"}
+
+16:27:36.010 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 594
+1 < 400
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 28
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H%2F9F4BsYmUSYGPIzciUDFlPYSGtr%2FAsmsPAq9KJ3G2v%2BPr1OBO6d2U7o%2B9k02JvOEYEFvwE1%2BRgxlLOPRyekhQH9iB3Q53XXgky6JsXYNyEjitfMXkv4%2F%2BWKIw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a38309fbcc1dfb9-SYD
+{"error":"Missing password"}
+
+16:27:36.010 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 583
+1 < 400
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 26
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1a-EGIcyP6BIiCXl5Gb1aph5CGf4VQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=z8cLchZTz1vHp7HMgVHvpmKfK86JuH9YnTKvAR8YTiuIIiJ%2F8BuL4j6sPswkt8cah5qcYa6m0dXUUIIRkFo23PyCDpDXroGCKgGyzDWh8r9RGicEDkSrZXp2Gw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a38309fbeaf6a51-SYD
+{"error":"user not found"}
+
+16:27:36.015 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 576
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Wy2FOYIjvzr%2BJpImR1fFvLQPzWN2%2FRTAxv%2BnncDZmogYHHN3I8MluTSmpoNBQREMimZAp4s81HPJUdplaBDV97zYBXzJANWdP8DQg0WPYluGqTB5WdDLxSx0DQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a38309fc974a93b-SYD
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+16:27:36.020 [pool-1-thread-5] ERROR com.intuit.karate - classpath:reqresApp/feature/Register.feature:21
+And match response ==
+"""
+{
+    "token": "#string"
+}
+"""
+match failed: EQUALS
+  $ | not equal | actual has 1 more key(s) than expected - {"id":4} (MAP:MAP)
+  {"id":4,"token":"QpwL5tke4Pnpja7X4"}
+  {"token":"#string"}
+
+
+classpath:reqresApp/feature/Register.feature:21
+16:27:36.024 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:36.025 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 601
+1 < 400
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 37
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"25-Ik70kof1lbc973ShN5FoVPxYn7A"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zTGv8AEUj9%2FQdz8W5Zr%2B%2Bfuq%2FpwrX6bUW%2FNNwkFaR1bRr1dr93WP4a3iYy03XZg1%2BQnGbdaOay2I8wNXHLISCNXE%2BQCr3p10QBuvPmISvU8MqnqZVRxdtvytRg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a38309fde27dfb3-SYD
+{"error":"Missing email or username"}
+
+16:27:36.026 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:36.027 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/unkonwn
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:27:36.029 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:36.030 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"eve.holt@reqres.in","password":""}
+
+16:27:36.031 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/unkonwn/2
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+---------------------------------------------------------
+feature: classpath:reqresApp/feature/Login.feature
+scenarios:  4 | passed:  4 | failed:  0 | time: 2.3928
+---------------------------------------------------------
+
+16:27:36.435 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:reqresApp/feature/Login.feature
+16:27:36.612 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 585
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: BYPASS
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Jwjf8kFUYckPbg7u%2FB6mG3RKmbNOdrKntjJZKkzKF6TwXvUcMow7i3fu0znKGz6gCgzKk%2B2E1B4H%2FdKn%2FLqhlBHsIq4BfXwjfarBglm28DyGlNch%2Bnz%2BwLPTQg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830a37eb5ab0b-SYD
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+16:27:36.617 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 587
+1 < 400
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 28
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ExiVk2GXzSqbTpZXpD3aBM1AJ47uC31J8HjOZOkwZYnUcwLEe6sse8XRxJudFFRua6e3RxZPwN67I%2BlNLkLU5dRpIJscf5t6MFi1%2B7bP3uurwpKak8SRZYx79Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830a38d1faaf5-SYD
+{"error":"Missing password"}
+
+16:27:36.619 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:36.622 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/unkonwn/23
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:27:36.622 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 591
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"e8-ov4wWh4/OY1IMQMqWgskYtOFnVs"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: BYPASS
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fNCJp6%2Bztm69bobacQOOMzbI71Z5FZ24zV7rN7uXTdH66oBvEGlyt%2B8%2BGzN17gaDIx7XMlczOG6N59WE6QzFZ5wN4KzGXucEkBO5hT%2BqWfNeN4UjrABUq%2F4vHA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830a389afa8b6-SYD
+{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+16:27:36.624 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:36.627 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:36.627 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:27:36.628 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:27:36.629 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:36.632 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 29
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"","password":"123"}
+
+16:27:36.685 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 58
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1535
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=S%2BGaG%2FYFbTHsr17RI77ilWsRyxOX0CV0SL5SSrKX%2BDDOclZnOPxpt4PBjkrrThgSv622D07SBPihzOrHPkj7vyyQXXey0nz9LuK6Lj6WM2q9QsqqV6M1zcd69w%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830a73b48a961-SYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+16:27:36.690 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:36.691 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:27:37.197 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 575
+1 < 404
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: BYPASS
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Cv0oyOXl2jCJeDLMHZeI7bOGrmetFY%2F4R186iGTmQqW4GFv8nEkJPYG5l71tlpNAsnhlhz4rs%2FTf5tY6qynqyi8%2FeaU6MNoNH0MxVpGJKYd2reCvE4q1dpTeEg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830a72d97a95f-SYD
+{}
+
+16:27:37.199 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:37.207 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 579
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: BYPASS
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JYRjfQ4NeOa4c7xCFjHR5chciI3CeQaHdYYcmlh0nyEAsDEn8lhjFoAUI2wphD9q99vUYbJpZEeAFS4LysHBEZal%2FGyBSppoRpESEUShMD12ly27y%2Fbg7sD4Ng%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830a739f0aabe-SYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+16:27:37.211 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:27:37.213 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:37.214 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 582
+1 < 400
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 37
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"25-Ik70kof1lbc973ShN5FoVPxYn7A"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=r9P6ne%2Bf11EjDWvBSh0M1UyT%2BZUcM%2BaZcDpFJbu2yQqj%2FnTy8LKT%2FdeKrw7v6zGbBtMBOaRzagb0AYKVpxeUkpEWwrj7oHr9%2FVHM3lEssVSZncpkT5va2CHqsQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830a74e355599-SYD
+{"error":"Missing email or username"}
+
+16:27:37.214 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+16:27:37.216 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:37.217 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:37.218 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+16:27:37.219 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"email":"eve.holt","password":"123"}
+
+16:27:37.268 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 404
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: BYPASS
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=W%2Bj8XB02Qx%2FFDoWOA7njMUgWvkzhTsvbona5mz9DfoTtOUpSYy513h1a5NMSiHcp%2FtHT5fINTNKu6tQKbzhUhqhJWBw7vzSPHOBuC53TGGGjVoypxZtBL9UoWw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830a79d32a831-SYD
+{}
+
+16:27:37.270 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:37.272 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:27:37.783 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 571
+1 < 201
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-vSJEajhhwFVmcUiG8iwFxGK3Q/w"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=AAW8KY9TzwNBXp3sVLV5RV%2B9J1k34chq8wmWsllC8lBy1pCtY2XG66vgJCfDAK0j%2FE559ZOrqVe2enhDE4GNIIRk9S0aZ%2FtbFhYZtxnj9trKA%2FntpvDWX%2B7Dew%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830aadfcba894-SYD
+{"name":"morpheus","job":"leader","id":"337","createdAt":"2023-03-06T05:27:32.695Z"}
+
+16:27:37.795 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:27:37.797 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?delay=3
+1 > Authorization: Token QpwL5tke4Pnpja7X4
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:27:37.797 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 579
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-n3aeyyY/yZTxWRQXhZEiL4Yi9/s"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nbU3JDTZ0ph0wuO5phVXEBnbqgX6HoGk85cf6udg%2Bh9ogdE%2BjUd5aFciYgKxrfeVvBvgaXToeKjY1nJIANsq7dxAeOr3SUr6MUdJ5iUEi8mezJqF5iymvj%2B50w%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830aaec27a932-SYD
+{"name":"morpheus","job":"zion resident","updatedAt":"2023-03-06T05:27:32.708Z"}
+
+16:27:37.798 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 579
+1 < 400
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 57
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CQ5hvDWKcGt6JtCEUxRijAbr%2FMoZzvrzJfJfbRmTpzbYhTsnO%2FKuZFeHRP4Cdz1uaib9Hpg1QEi4PX7sZVy0bgcRVSHVb4FrQXqta3CIDWicnyPr5jQMGUKGxQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830aaeeaea86a-SYD
+{"error":"Note: Only defined users succeed registration"}
+
+16:27:37.802 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 588
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-T+FoOPVocQD/j4sjDKeP0k/azzQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CKnWv2upqk29F9O%2FbE%2BU9qaDgasf3rTw1xM1s2NKdyEg0p6xTINb%2Bk7%2F%2BVInfQuM9j%2FSbfgbppkTzeB4bOBDHJm%2FWSwDE8phJKdsvfwataCNmGGzxPRsjqLcUQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830aaedbfaaf3-SYD
+{"name":"morpheus","job":"zion resident","updatedAt":"2023-03-06T05:27:32.710Z"}
+
+16:27:37.852 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 580
+1 < 204
+1 < Date: Mon, 06 Mar 2023 05:27:32 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bHWxIEFeaOkSrfjuOOVRaZ%2BLdR7w4NyhpRXlmlVpaBHW%2BCttE%2FvlC41KEK4C7pbE9dN%2BczhYvsqoAf4Nfi2Zyeezyv6%2B89idgyXfCFGA3kEhhXHZmXMunFVqCw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830ab387ca961-SYD
+
+
+---------------------------------------------------------
+feature: classpath:reqresApp/feature/Register.feature
+scenarios:  4 | passed:  3 | failed:  1 | time: 2.3383
+---------------------------------------------------------
+
+16:27:37.859 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:reqresApp/feature/Register.feature
+---------------------------------------------------------
+feature: classpath:reqresApp/feature/Resources.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 1.7603
+---------------------------------------------------------
+
+16:27:37.886 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:reqresApp/feature/Resources.feature
+16:27:41.381 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3584
+1 < 200
+1 < Date: Mon, 06 Mar 2023 05:27:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7qpLVnebg0csHfnALRanuhvUSnV8kjwdWKHdUVbMDf7lkQSQ5mJW49xcL6%2B4OrqDPCi8%2BIUKAWOwFKmN5OEAXEtpdNBpW3EMkN7OidN7eYC6GdwUK5SpsbTMIA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a3830ae8b8e55b1-SYD
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+---------------------------------------------------------
+feature: classpath:reqresApp/feature/Users.feature
+scenarios:  8 | passed:  8 | failed:  0 | time: 7.1565
+---------------------------------------------------------
+
+16:27:41.480 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:reqresApp/feature/Users.feature
+Karate version: 1.3.1
+======================================================
+elapsed:   7.85 | threads:    5 | thread time: 13.65 
+features:     4 | skipped:    0 | efficiency: 0.35
+scenarios:   19 | passed:    18 | failed: 1
+======================================================
+>>> failed features:
+match failed: EQUALS
+  $ | not equal | actual has 1 more key(s) than expected - {"id":4} (MAP:MAP)
+  {"id":4,"token":"QpwL5tke4Pnpja7X4"}
+  {"token":"#string"}
+
+
+classpath:reqresApp/feature/Register.feature:21
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.3.1
+file:///Users/kliu3/reqresApp/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
